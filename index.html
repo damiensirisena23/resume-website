@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <button id="theme-toggle">Toggle Theme</button>
+    <h1>John Doe</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <section id="about">
+    <img src="profile.jpg" alt="Profile" class="profile-pic" />
+    <div>
+      <h2>About Me</h2>
+      <p>Passionate web developer with a knack for creating engaging and modern web experiences.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li class="job">Company A - Frontend Developer</li>
+      <li class="job">Company B - UI/UX Designer</li>
+      <li class="job">Company C - Full Stack Developer</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <span>HTML</span>
+        <div class="progress"><div class="progress-bar" style="--progress: 90%"></div></div>
+      </div>
+      <div class="skill">
+        <span>CSS</span>
+        <div class="progress"><div class="progress-bar" style="--progress: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress"><div class="progress-bar" style="--progress: 80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>React</span>
+        <div class="progress"><div class="progress-bar" style="--progress: 75%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Node.js</span>
+        <div class="progress"><div class="progress-bar" style="--progress: 70%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">Project One</div>
+      <div class="card">Project Two</div>
+      <div class="card">Project Three</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+      <p id="form-message"></p>
+    </form>
+  </section>
+
+  <button id="download-btn">Download PDF</button>
+
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
